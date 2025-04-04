@@ -1,0 +1,1 @@
+// webcam.js (non utilisé actuellement, peut rester vide)

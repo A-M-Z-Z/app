@@ -1,0 +1,1732 @@
+2025-04-04 17:24:56,421 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.203:5000
+2025-04-04 17:24:56,422 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-04 17:24:57,033 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:24:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:24:57,501 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:24:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:24:59,510 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:24:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:00,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:01,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:02,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:03,505 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:04,502 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:05,508 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:06,507 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:07,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:07,651 - werkzeug - INFO - 192.168.1.203 - - [04/Apr/2025 17:25:07] "GET / HTTP/1.1" 200 -
+2025-04-04 17:25:07,820 - app - ERROR - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1669, in handle_user_exception
+    return self.handle_http_exception(e)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1609, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\amino\Documents\projet nv\projet nv\app.py", line 315, in page_not_found
+    return render_template('404.html'), 404
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2025-04-04 17:25:07,829 - werkzeug - INFO - 192.168.1.203 - - [04/Apr/2025 17:25:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-04-04 17:25:07,838 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1669, in handle_user_exception
+    return self.handle_http_exception(e)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1609, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\amino\Documents\projet nv\projet nv\app.py", line 315, in page_not_found
+    return render_template('404.html'), 404
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\werkzeug\serving.py", line 333, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\werkzeug\serving.py", line 320, in execute
+    application_iter = app(environ, start_response)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2551, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2531, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1727, in handle_exception
+    server_error = self.ensure_sync(handler)(server_error)
+  File "c:\Users\amino\Documents\projet nv\projet nv\app.py", line 319, in server_error
+    return render_template('500.html'), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 500.html
+2025-04-04 17:25:08,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:09,509 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:10,206 - werkzeug - INFO - 192.168.1.203 - - [04/Apr/2025 17:25:10] "GET /register HTTP/1.1" 200 -
+2025-04-04 17:25:10,228 - app - ERROR - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1669, in handle_user_exception
+    return self.handle_http_exception(e)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1609, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\amino\Documents\projet nv\projet nv\app.py", line 315, in page_not_found
+    return render_template('404.html'), 404
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2025-04-04 17:25:10,235 - werkzeug - INFO - 192.168.1.203 - - [04/Apr/2025 17:25:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-04-04 17:25:10,239 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1669, in handle_user_exception
+    return self.handle_http_exception(e)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1609, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\amino\Documents\projet nv\projet nv\app.py", line 315, in page_not_found
+    return render_template('404.html'), 404
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\werkzeug\serving.py", line 333, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\werkzeug\serving.py", line 320, in execute
+    application_iter = app(environ, start_response)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2551, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2531, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1727, in handle_exception
+    server_error = self.ensure_sync(handler)(server_error)
+  File "c:\Users\amino\Documents\projet nv\projet nv\app.py", line 319, in server_error
+    return render_template('500.html'), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 500.html
+2025-04-04 17:25:10,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:11,505 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:12,499 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:13,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:14,506 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:15,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:16,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:17,510 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:18,509 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:19,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:20,503 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:21,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:22,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:23,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:24,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:25,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:26,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:27,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:28,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:29,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:30,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:31,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:32,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:33,509 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:34,507 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:35,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:36,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:37,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:38,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:43,456 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.203:5000
+2025-04-04 17:25:43,457 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-04 17:25:44,019 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:44,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:45,508 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:46,503 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:47,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:48,139 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:48] "GET / HTTP/1.1" 200 -
+2025-04-04 17:25:48,506 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:49,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:49,684 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:49] "GET /register HTTP/1.1" 200 -
+2025-04-04 17:25:50,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:51,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:52,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:53,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:54,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:55,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:56,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:57,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:58,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:25:59,509 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:25:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:00,803 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:00,898 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:00] "GET / HTTP/1.1" 200 -
+2025-04-04 17:26:01,798 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:02,800 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:02,803 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:02] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:26:03,793 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:03,794 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:03] "GET / HTTP/1.1" 200 -
+2025-04-04 17:26:04,799 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:05,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:05,856 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:05] "GET /register HTTP/1.1" 200 -
+2025-04-04 17:26:06,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:07,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:08,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:09,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:10,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:11,796 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:12,803 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:13,318 - __main__ - INFO - Base de données sauvegardée avec 1 visages
+2025-04-04 17:26:13,321 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:13] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-04 17:26:13,324 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:13] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:26:13,782 - __main__ - INFO - Présence enregistrée pour lj dtf
+2025-04-04 17:26:13,783 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:14,804 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:15,801 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:16,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:17,506 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:18,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:19,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:20,267 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:20] "GET / HTTP/1.1" 200 -
+2025-04-04 17:26:20,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:21,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:22,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:22,900 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:22] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:26:23,508 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:23,974 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:23] "GET / HTTP/1.1" 200 -
+2025-04-04 17:26:24,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:25,118 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:25] "GET /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:25,178 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:25] "[36mGET /static/js/recognize.js HTTP/1.1[0m" 304 -
+2025-04-04 17:26:25,509 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:26,352 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:26,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:27,642 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:27,796 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:28,627 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:29,062 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:29,629 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:30,045 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:30,938 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:30,939 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:31,349 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:31,802 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:32,362 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:32,510 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:33,349 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:33,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:34,334 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:34] "GET / HTTP/1.1" 200 -
+2025-04-04 17:26:34,354 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:34,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:35,206 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:35] "GET /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:35,218 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:35] "[36mGET /static/js/recognize.js HTTP/1.1[0m" 304 -
+2025-04-04 17:26:35,503 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:36,988 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:36,988 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:37,954 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:37,954 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:38,971 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:38,973 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:39,960 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:39,961 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:40,965 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:40,966 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:41,955 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:41,956 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:42,964 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:42,965 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:43,959 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:43,960 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:44,966 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:44,967 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:45,957 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:45,957 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:46,949 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:46,949 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:47,969 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:47,969 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:48,404 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:48,793 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:49,393 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:49,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:50,401 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:50,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:51,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:51,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:52,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:52,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:53,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:53,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:54,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:54,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:55,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:55,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:56,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:56,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:57,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:57,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:58,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:58,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:59,396 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:59,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:26:59,969 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:26:59] "GET / HTTP/1.1" 200 -
+2025-04-04 17:27:00,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:01,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:01,988 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:01] "GET /presences HTTP/1.1" 200 -
+2025-04-04 17:27:02,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:03,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:04,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:05,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:06,212 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:06] "GET / HTTP/1.1" 200 -
+2025-04-04 17:27:06,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:07,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:08,113 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:08] "GET /register HTTP/1.1" 200 -
+2025-04-04 17:27:08,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:09,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:10,508 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:11,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:12,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:13,807 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:14,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:15,791 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:16,804 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:17,798 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:18,791 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:19,795 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:20,792 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:21,313 - __main__ - INFO - Base de données sauvegardée avec 2 visages
+2025-04-04 17:27:21,315 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:21] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-04 17:27:21,318 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:21] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:27:21,790 - __main__ - INFO - Présence enregistrée pour popo srtv
+2025-04-04 17:27:21,791 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:22,800 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:23,799 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:24,790 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:25,283 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:25] "GET / HTTP/1.1" 200 -
+2025-04-04 17:27:25,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:26,466 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:26] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:27:26,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:27,324 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:27] "GET / HTTP/1.1" 200 -
+2025-04-04 17:27:27,508 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:28,271 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:28] "GET /presences HTTP/1.1" 200 -
+2025-04-04 17:27:28,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:29,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:30,505 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:30,940 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:30] "GET / HTTP/1.1" 200 -
+2025-04-04 17:27:31,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:31,834 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:31] "GET /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:31,849 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:31] "[36mGET /static/js/recognize.js HTTP/1.1[0m" 304 -
+2025-04-04 17:27:32,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:33,035 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:33,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:34,031 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:34,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:35,029 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:35,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:36,028 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:36,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:37,312 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:37,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:38,318 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:38,784 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:39,315 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:39,783 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:40,319 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:40,788 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:41,334 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:41,790 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:43,068 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:43,069 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:44,083 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:44,084 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:44,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:44,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:45,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:45,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:46,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:46,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:47,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:47,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:48,511 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:48,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:49,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:49,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:50,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:50,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:51,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:52,567 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:52,570 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:53,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:53,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:54,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:54,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:55,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:55,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:56,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:56,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:57,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:57,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:58,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:58,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:59,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:27:59,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:27:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:00,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:00,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:01,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:01,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:02,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:02,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:03,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:03,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:04,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:04,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:05,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:05,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:06,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:06,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:07,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:07,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:08,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:08,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:09,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:09,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:10,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:10,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:11,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:11,553 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:12,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:12,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:13,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:13,556 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:14,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:14,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:15,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:15,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:16,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:16,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:17,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:17,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:18,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:18,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:19,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:19,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:20,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:20,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:21,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:21,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:22,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:22,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:23,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:23,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:24,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:24,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:25,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:25,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:26,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:26,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:27,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:27,556 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:28,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:28,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:29,554 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:29,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:30,577 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:30,588 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:31,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:31,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:32,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:32,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:33,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:33,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:34,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:34,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:35,551 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:35,553 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:36,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:36,557 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:37,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:37,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:38,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:38,554 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:39,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:39,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:40,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:40,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:41,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:41,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:42,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:42,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:43,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:43,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:44,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:44,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:45,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:45,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:46,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:46,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:47,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:47,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:48,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:48,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:49,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:49,561 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:50,592 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:50,594 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:51,575 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:51,575 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:52,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:52,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:53,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:53,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:54,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:54,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:55,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:55,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:56,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:56,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:57,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:57,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:58,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:58,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:59,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:28:59,558 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:28:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:00,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:00,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:01,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:01,556 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:02,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:02,551 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:03,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:03,560 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:04,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:04,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:05,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:05,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:06,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:06,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:07,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:07,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:08,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:08,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:09,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:09,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:10,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:10,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:11,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:11,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:12,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:12,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:13,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:13,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:14,551 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:14,557 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:15,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:15,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:16,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:16,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:17,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:17,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:18,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:18,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:19,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:19,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:20,053 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:20,080 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:20,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:21,056 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:21,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:22,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:22,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:23,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:23,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:24,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:24,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:25,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:25,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:26,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:26,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:27,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:27,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:28,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:28,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:35,054 - __main__ - INFO - Base de données chargée avec 2 visages
+2025-04-04 17:29:35,069 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.203:5000
+2025-04-04 17:29:35,069 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-04 17:29:35,567 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:35,574 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:35,575 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:35,592 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:35,596 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:36,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:36,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:37,502 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:37,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:37,874 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:37] "GET / HTTP/1.1" 200 -
+2025-04-04 17:29:38,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:38,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:39,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:39,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:40,475 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:40] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:29:40,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:40,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:41,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:41,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:42,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:42,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:42,555 - __main__ - INFO - Base de données sauvegardée avec 1 visages
+2025-04-04 17:29:42,557 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:42] "[32mPOST /delete_face HTTP/1.1[0m" 302 -
+2025-04-04 17:29:42,560 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:42] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:29:43,290 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:43] "GET / HTTP/1.1" 200 -
+2025-04-04 17:29:43,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:43,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:43,969 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:43] "GET /register HTTP/1.1" 200 -
+2025-04-04 17:29:44,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:44,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:45,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:45,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:46,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:46,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:47,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:47,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:48,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:48,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:50,101 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:50,101 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:50,389 - app - ERROR - Exception on /register [POST]
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\amino\Documents\projet nv\projet nv\app.py", line 284, in register
+    return render_template('processing.html',
+                           redirect_url=url_for('registration_complete'))
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: processing.html
+2025-04-04 17:29:50,396 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:50] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-04-04 17:29:50,404 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\amino\Documents\projet nv\projet nv\app.py", line 284, in register
+    return render_template('processing.html',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: processing.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\werkzeug\serving.py", line 333, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\werkzeug\serving.py", line 320, in execute
+    application_iter = app(environ, start_response)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2551, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 2531, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\app.py", line 1727, in handle_exception
+    server_error = self.ensure_sync(handler)(server_error)
+  File "c:\Users\amino\Documents\projet nv\projet nv\app.py", line 398, in server_error
+    return render_template('500.html'), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amino\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 500.html
+2025-04-04 17:29:51,375 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:51,376 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:51,378 - __main__ - INFO - Base de données sauvegardée avec 2 visages
+2025-04-04 17:29:51,380 - __main__ - ERROR - Erreur lors de l'enregistrement: '_io.BytesIO' object has no attribute 'save'
+2025-04-04 17:29:52,101 - __main__ - INFO - Présence enregistrée pour faef fafa
+2025-04-04 17:29:52,101 - __main__ - INFO - Présence enregistrée pour faef fafa
+2025-04-04 17:29:52,102 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:52,102 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:53,085 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:53,085 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:53,511 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:53,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:54,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:54,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:55,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:55,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:56,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:56,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:57,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:57,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:58,002 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:58] "GET / HTTP/1.1" 200 -
+2025-04-04 17:29:58,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:58,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:59,094 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:59] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:29:59,508 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:29:59,509 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:29:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:00,043 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:00] "GET / HTTP/1.1" 200 -
+2025-04-04 17:30:00,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:00,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:01,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:01,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:02,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:02,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:03,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:03,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:04,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:04,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:05,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:05,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:06,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:06,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:07,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:07,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:08,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:08,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:09,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:09,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:10,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:10,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:11,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:11,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:12,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:12,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:13,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:13,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:14,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:14,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:15,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:15,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:16,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:16,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:17,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:17,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:18,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:18,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:19,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:19,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:19,743 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:19] "GET /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:19,799 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:19] "[36mGET /static/js/recognize.js HTTP/1.1[0m" 304 -
+2025-04-04 17:30:20,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:20,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:21,256 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:21,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:21,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:22,256 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:23,066 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:23,067 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:23,068 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:23] "GET / HTTP/1.1" 200 -
+2025-04-04 17:30:23,224 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:23,509 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:23,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:24,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:24,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:25,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:25,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:26,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:26,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:27,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:27,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:28,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:28,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:29,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:29,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:30,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:30,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:31,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:31,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:32,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:32,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:33,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:33,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:34,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:34,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:35,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:35,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:36,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:36,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:37,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:37,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:38,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:38,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:39,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:39,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:40,507 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:40,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:41,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:41,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:42,515 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:42,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:43,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:43,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:44,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:44,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:45,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:45,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:46,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:46,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:47,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:47,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:48,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:48,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:49,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:49,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:50,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:50,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:51,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:51,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:52,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:52,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:53,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:53,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:54,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:54,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:55,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:55,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:56,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:56,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:57,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:57,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:58,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:58,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:59,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:30:59,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:30:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:00,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:00,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:01,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:01,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:02,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:02,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:03,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:03,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:04,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:04,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:05,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:05,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:06,513 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:06,514 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:07,504 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:07,506 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:08,508 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:08,508 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:09,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:09,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:10,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:10,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:11,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:11,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:12,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:12,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:13,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:13,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:14,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:14,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:15,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:15,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:16,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:16,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:17,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:17,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:18,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:18,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:19,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:19,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:20,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:20,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:21,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:21,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:22,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:22,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:23,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:23,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:24,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:24,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:25,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:25,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:26,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:26,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:27,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:27,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:28,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:28,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:29,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:29,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:30,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:30,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:31,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:31,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:32,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:32,556 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:33,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:33,553 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:34,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:34,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:35,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:35,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:36,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:36,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:37,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:37,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:38,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:38,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:39,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:39,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:40,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:40,556 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:41,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:41,570 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:42,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:42,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:43,551 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:43,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:44,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:44,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:45,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:45,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:46,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:46,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:47,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:47,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:48,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:48,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:49,570 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:49,573 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:50,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:50,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:51,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:51,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:52,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:52,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:53,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:53,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:54,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:54,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:55,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:55,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:56,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:56,560 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:57,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:57,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:58,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:58,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:59,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:31:59,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:31:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:00,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:00,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:01,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:01,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:02,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:02,551 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:03,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:03,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:04,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:04,568 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:05,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:05,551 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:06,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:06,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:07,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:07,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:08,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:08,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:09,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:09,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:10,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:10,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:11,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:11,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:12,568 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:12,573 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:13,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:13,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:14,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:14,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:15,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:15,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:15,778 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:15] "GET /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:15,789 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:15] "[36mGET /static/js/recognize.js HTTP/1.1[0m" 304 -
+2025-04-04 17:32:16,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:16,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:16,975 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:17,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:17,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:17,975 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:19,175 - __main__ - INFO - Présence enregistrée pour faef fafa
+2025-04-04 17:32:19,175 - __main__ - INFO - Présence enregistrée pour faef fafa
+2025-04-04 17:32:19,176 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:19,176 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:19,619 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:20,055 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:20,331 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:21,360 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:21,363 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:21,364 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:22,401 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:22,402 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:22,404 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:22,600 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:22,603 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:22,614 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:22,978 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:23,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:23,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:24,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:24,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:24,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:25,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:25,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:25,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:26,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:26,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:26,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:26,971 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:27,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:27,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:27,990 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:28,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:28,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:29,232 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:29,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:29,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:29,966 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:30,511 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:30,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:30,978 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:31,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:31,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:32,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:32,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:32,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:33,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:33,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:33,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:34,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:34,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:34,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:35,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:35,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:35,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:36,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:36,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:36,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:37,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:37,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:37,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:38,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:38,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:38,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:39,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:39,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:39,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:40,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:40,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:40,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:41,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:41,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:42,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:42,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:42,553 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:43,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:43,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:43,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:44,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:44,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:44,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:44,845 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:45,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:45,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:45,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:46,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:46,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:46,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:47,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:47,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:47,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:48,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:48,561 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:48,569 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:49,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:49,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:49,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:50,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:50,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:50,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:51,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:51,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:51,560 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:52,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:52,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:52,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:53,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:53,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:53,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:54,511 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:54,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:54,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:55,516 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:55,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:56,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:56,527 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:32:56,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:32:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:02,563 - __main__ - INFO - Base de données chargée avec 2 visages
+2025-04-04 17:33:02,577 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.203:5000
+2025-04-04 17:33:02,578 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-04 17:33:03,091 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:03,122 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:03,140 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:03,177 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:03,179 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:03,188 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:03,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:03,559 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:03,566 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:04,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:04,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:04,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:05,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:05,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:05,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:06,520 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:06,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:06,553 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:06,558 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:06] "GET / HTTP/1.1" 200 -
+2025-04-04 17:33:07,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:07,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:07,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:07,730 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:07] "GET /register HTTP/1.1" 200 -
+2025-04-04 17:33:08,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:08,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:08,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:09,426 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:09] "GET / HTTP/1.1" 200 -
+2025-04-04 17:33:09,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:09,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:09,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:09,977 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:09] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:33:10,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:10,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:10,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:10,798 - __main__ - INFO - Base de données sauvegardée avec 1 visages
+2025-04-04 17:33:10,799 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:10] "[32mPOST /delete_face HTTP/1.1[0m" 302 -
+2025-04-04 17:33:10,802 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:10] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:33:11,301 - __main__ - INFO - Base de données sauvegardée avec 0 visages
+2025-04-04 17:33:11,302 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:11] "[32mPOST /delete_face HTTP/1.1[0m" 302 -
+2025-04-04 17:33:11,305 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:11] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:33:11,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:11,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:11,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:12,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:12] "GET / HTTP/1.1" 200 -
+2025-04-04 17:33:12,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:12,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:12,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:13,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:13,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:13,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:14,030 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:14] "GET /register HTTP/1.1" 200 -
+2025-04-04 17:33:14,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:14,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:14,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:15,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:15,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:15,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:16,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:16,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:16,563 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:17,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:17,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:17,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:18,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:18,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:18,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:19,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:19,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:19,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:20,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:20,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:20,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:21,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:21,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:21,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:23,364 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:23,364 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:23,365 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:24,104 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:24,388 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:24,389 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:24] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:25,409 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:25,692 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:25,692 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:25,695 - __main__ - INFO - Base de données sauvegardée avec 1 visages
+2025-04-04 17:33:25,700 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:25] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-04 17:33:25,704 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:25] "GET /faces HTTP/1.1" 200 -
+2025-04-04 17:33:26,714 - __main__ - INFO - Présence enregistrée pour amine bel
+2025-04-04 17:33:26,715 - __main__ - INFO - Présence enregistrée pour amine bel
+2025-04-04 17:33:26,715 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:26,717 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:26,717 - __main__ - INFO - Présence enregistrée pour amine bel
+2025-04-04 17:33:26,720 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:27,752 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:27,752 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:27,752 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:27,913 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:27,920 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:27,920 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:28,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:28,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:28,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:29,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:29,564 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:29,570 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:30,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:30,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:30,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:31,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:31,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:31,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:32,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:32,554 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:32,559 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:33,258 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:33] "GET / HTTP/1.1" 200 -
+2025-04-04 17:33:33,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:33,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:33,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:34,232 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:34] "GET /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:34,289 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:34] "[36mGET /static/js/recognize.js HTTP/1.1[0m" 304 -
+2025-04-04 17:33:34,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:34,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:34,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:35,789 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:35,790 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:35,791 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:35,791 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:37,605 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:37,605 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:37,605 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:37,608 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:38,647 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:38,930 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:38,931 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:38,932 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:39,115 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:39,117 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:39,125 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:39,129 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:39,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:39,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:39,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:39,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:40,524 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:40,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:40,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:40,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:41,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:41,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:41,569 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:41,578 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:42,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:42,554 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:42,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:42,556 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:43,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:43,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:43,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:43,553 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:43] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:44,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:44,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:44,551 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:44,559 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:44] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:45,483 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:45,553 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:45,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:45,557 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:45] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:46,590 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:46,614 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:46,621 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:46,622 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:46] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:47,490 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:47,557 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:47,557 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:47,568 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:47] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:48,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:48,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:48,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:48,553 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:48] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:49,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:49,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:49,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:49,553 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:49] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:50,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:50,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:50,560 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:50,575 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:50] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:51,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:51,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:51,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:51,557 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:51] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:52,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:52,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:52,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:52,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:52] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:53,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:53,559 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:53,560 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:53,575 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:53] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:54,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:54,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:54,547 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:54,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:54] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:55,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:55,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:55,563 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:55,572 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:55] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:56,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:56,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:56,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:56,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:56] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:57,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:57,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:57,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:57,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:57] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:58,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:58,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:58,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:58] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:59,523 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:59,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:59,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:33:59,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:33:59] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:00,526 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:00,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:00,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:00,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:00] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:01,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:01,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:01,563 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:01,566 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:01] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:02,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:02,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:02,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:02,558 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:02] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:03,535 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:03,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:03,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:03,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:03] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:04,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:04,556 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:04,557 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:04,583 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:04] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:05,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:05,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:05,548 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:05,556 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:05] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:06,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:06,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:06,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:06,552 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:06] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:07,558 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:07,559 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:07,566 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:07,573 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:07,643 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:07] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:08,495 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:08,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:08,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:08,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:08] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:09,470 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:09,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:09,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:09,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:09] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:10,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:10,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:10,554 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:10,555 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:10] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:11,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:11,553 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:11,554 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:11,560 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:11] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:12,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:12,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:12,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:12,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:12] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:13,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:13,551 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:13,565 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:13,571 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:13] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:14,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:14,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:14,556 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:14,557 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:14] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:15,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:15,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:15,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:15,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:15] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:16,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:16,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:16,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:16,563 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:16] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:17,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:17,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:17,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:17,550 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:17] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:18,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:18,536 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:18,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:18,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:18] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:19,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:19,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:19,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:19,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:19] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:20,521 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:20,522 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:20,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:20,888 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:20] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:21,531 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:21,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:21,542 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:21,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:21] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:22,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:22,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:22,558 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:22,565 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:22] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:23,799 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:23,801 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:23,801 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:23,802 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:23] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:25,606 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:25,607 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:25] "GET /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:25,607 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:25,608 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:25,610 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:25] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:25,623 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:25] "[36mGET /static/js/recognize.js HTTP/1.1[0m" 304 -
+2025-04-04 17:34:26,932 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:26,935 - __main__ - INFO - Présence enregistrée pour amine bel
+2025-04-04 17:34:26,937 - __main__ - INFO - Présence enregistrée pour amine bel
+2025-04-04 17:34:26,938 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:26,938 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:26,940 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:26] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:27,967 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:27] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:28,252 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:28,252 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:28,253 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:28] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:29,280 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:29,281 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:29,282 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:29,282 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:29,563 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:29,564 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:29,764 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:29,768 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:29] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:30,067 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:30,629 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:30,632 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:30,632 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:30] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:31,097 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:31,378 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:31,381 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:31,381 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:31,543 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:31,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:31,545 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:31] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:32,541 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:32,544 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:32,565 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:32,572 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:32] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:33,180 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:33,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:33,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:33,560 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:33,805 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:33] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:34,525 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:34,533 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:34,534 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:34] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:35,530 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:35,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:35,540 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:35,546 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:35,997 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:35] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:36,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:36,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:36,554 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:36,802 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:36] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:37,529 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:37,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:37,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:37,800 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:37] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:38,532 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:38,537 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:38,539 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:38,796 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:38] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:39,528 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:39,538 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:39,549 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:39,808 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:39] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:40,280 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:40,289 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:40,320 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:40,322 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:40,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:40,802 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:40] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:41,517 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:41,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:41,519 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:41,796 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:41] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:42,283 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:42,512 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:42,518 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:42] "POST /recognize HTTP/1.1" 200 -
+2025-04-04 17:34:42,801 - werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 17:34:42] "POST /recognize HTTP/1.1" 200 -
